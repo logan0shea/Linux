@@ -1,5 +1,0 @@
-1i\ Great Literary Characters
-
-s/\([0-9]\{3\}\)-\([0-9]\{3\}\)-\([0-9]\{4\}\)/1+(\1)-\2-\3/g
-
-$ a\Happily Ever after.  The End
