@@ -1,2 +1,2 @@
-Welcome to my Linux Administration Portfolio!  See the different branches for topics regarding Linux server setup and administrative duties.  
+Welcome to my Linux Administration Portfolio!  See branches for topics and documentation related to Linux server setup and administrative duties.  
 
