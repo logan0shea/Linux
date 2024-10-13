@@ -1,0 +1,19 @@
+#!/usr/bin/awk -f
+
+#The top line is what states to execute the script using awk.  
+
+BEGIN { FS=":"}
+
+#Tells the script where to begin, and sets the delimiter to a colon (:) 
+
+/Took/ {split($1, field1," "); print field1 [1] , "$" $3+$4+$5};
+
+#Searches for the name Took, and splits the first field by first name / last name so we can print ONLY the first name of those who have last name 'Took'
+
+$5>10 && $5<200 {print $1 , "$"$5};
+
+#If field 5 is less than 10, AND if field 5 is less than 200, print the full first field (First Name Last Name) and their donation amount (Field 5).
+
+{avg=($3+$4+$5)/3; if(avg<300) print $1 , "$"avg};
+
+#Store the average donation amount per person into a variable called 'avg'.  Then if the average (avg) is less than 300, print their full name and average donation amount.  
